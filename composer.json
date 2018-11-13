@@ -1,0 +1,43 @@
+{
+    "name": "masterdojo/laratrigger",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Pedro Coelho",
+            "email": "pedro@mastermarketing.com.br",
+            "homepage": "mastermarketing.com.br"
+        }
+    ],
+    "homepage": "https://github.com/masterdojo/laratrigger",
+    "keywords": ["Laravel", "LaraTrigger"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Masterdojo\\LaraTrigger\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Masterdojo\\LaraTrigger\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Masterdojo\\LaraTrigger\\LaraTriggerServiceProvider"
+            ],
+            "aliases": {
+                "LaraTrigger": "Masterdojo\\LaraTrigger\\Facades\\LaraTrigger"
+            }
+        }
+    }
+}
